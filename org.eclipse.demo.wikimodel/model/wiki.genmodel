@@ -15,17 +15,12 @@
     </genClasses>
     <genClasses ecoreClass="wikimodel.ecore#//HistoryPage"/>
     <genClasses image="false" ecoreClass="wikimodel.ecore#//User">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wikimodel.ecore#//RegisteredUser/blocked"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wikimodel.ecore#//RegisteredUser/uniqueUserName"/>
       <genOperations ecoreOperation="wikimodel.ecore#//User/readPage"/>
     </genClasses>
     <genClasses ecoreClass="wikimodel.ecore#//EncyclopediaEntry"/>
     <genClasses ecoreClass="wikimodel.ecore#//Media"/>
     <genClasses ecoreClass="wikimodel.ecore#//ProjectPage"/>
-    <genClasses ecoreClass="wikimodel.ecore#//SimpleRegisteredUser">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference wikimodel.ecore#//RegisteredUser/userpageprofile"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wikimodel.ecore#//RegisteredUser/uniqueUserName"/>
-    </genClasses>
+    <genClasses ecoreClass="wikimodel.ecore#//SimpleRegisteredUser"/>
     <genClasses ecoreClass="wikimodel.ecore#//UnregisteredUser">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wikimodel.ecore#//UnregisteredUser/ipAddress"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference wikimodel.ecore#//UnregisteredUser/simpleregistereduser"/>

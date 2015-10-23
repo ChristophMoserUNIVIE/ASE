@@ -50,4 +50,5 @@
   <eClassifiers xsi:type="ecore:EClass" name="ProjectGroup" eSuperTypes="#//ProjectOrInterestGroup"/>
   <eClassifiers xsi:type="ecore:EClass" name="InterestGroup" eSuperTypes="#//ProjectOrInterestGroup"/>
   <eClassifiers xsi:type="ecore:EClass" name="ProjectOrInterestGroup" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Wikipedia"/>
 </ecore:EPackage>

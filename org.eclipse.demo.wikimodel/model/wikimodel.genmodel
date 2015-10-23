@@ -53,5 +53,6 @@
     <genClasses ecoreClass="wikimodel.ecore#//ProjectGroup"/>
     <genClasses ecoreClass="wikimodel.ecore#//InterestGroup"/>
     <genClasses ecoreClass="wikimodel.ecore#//ProjectOrInterestGroup"/>
+    <genClasses ecoreClass="wikimodel.ecore#//Wikipedia"/>
   </genPackages>
 </genmodel:GenModel>

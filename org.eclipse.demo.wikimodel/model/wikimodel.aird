@@ -244,6 +244,15 @@
             <styles xmi:type="notation:ShapeStyle" xmi:id="_CtnuQXkFEeWi2sF4jeviCw" fontName="Segoe UI" fontHeight="8"/>
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CtnuQnkFEeWi2sF4jeviCw" x="1000" y="230" width="120" height="100"/>
           </children>
+          <children xmi:type="notation:Node" xmi:id="_U2Oh4HmTEeWqkJwkSy1Zww" type="2003" element="_U1IVsHmTEeWqkJwkSy1Zww">
+            <children xmi:type="notation:Node" xmi:id="_U2PI8HmTEeWqkJwkSy1Zww" type="5007"/>
+            <children xmi:type="notation:Node" xmi:id="_U2PwAHmTEeWqkJwkSy1Zww" type="7004">
+              <styles xmi:type="notation:SortingStyle" xmi:id="_U2PwAXmTEeWqkJwkSy1Zww"/>
+              <styles xmi:type="notation:FilteringStyle" xmi:id="_U2PwAnmTEeWqkJwkSy1Zww"/>
+            </children>
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_U2Oh4XmTEeWqkJwkSy1Zww" fontName="Segoe UI" fontHeight="8"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U2Oh4nmTEeWqkJwkSy1Zww" x="410" y="50" width="120" height="100"/>
+          </children>
           <styles xmi:type="notation:DiagramStyle" xmi:id="_WdSgMnjsEeWi2sF4jeviCw"/>
           <edges xmi:type="notation:Edge" xmi:id="_zdJ5EHj9EeWi2sF4jeviCw" type="4001" element="_zcyssHj9EeWi2sF4jeviCw" source="_lHs0QHjuEeWi2sF4jeviCw" target="_bkdOUHjsEeWi2sF4jeviCw">
             <children xmi:type="notation:Node" xmi:id="_zdKgIHj9EeWi2sF4jeviCw" type="6001">
@@ -1223,6 +1232,14 @@
           <endLabelStyle xmi:type="diagram:EndLabelStyle" xmi:id="_PVlzlXmCEeWqkJwkSy1Zww" labelSize="6" showIcon="false" labelColor="39,76,114"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@edgeMappings[name='EC_EReference']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_U1IVsHmTEeWqkJwkSy1Zww" name="Wikipedia" tooltipText="" width="12" height="10">
+        <target xmi:type="ecore:EClass" href="wikimodel.ecore#//Wikipedia"/>
+        <semanticElements xmi:type="ecore:EClass" href="wikimodel.ecore#//Wikipedia"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_U1Jj0HmTEeWqkJwkSy1Zww" backgroundStyle="Liquid" foregroundColor="255,252,216">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       </ownedDiagramElements>
       <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']"/>
       <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_WdNntXjsEeWi2sF4jeviCw"/>

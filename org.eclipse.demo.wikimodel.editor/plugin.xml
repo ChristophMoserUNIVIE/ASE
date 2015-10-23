@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated wiki -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="wikimodel.presentation.WikimodelModelWizardID"
+            name="%_UI_WikimodelModelWizard_label"
+            class="wikimodel.presentation.WikimodelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/WikimodelModelFile.gif">
+         <description>%_UI_WikimodelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated wiki -->
+      <editor
+            id="wikimodel.presentation.WikimodelEditorID"
+            name="%_UI_WikimodelEditor_label"
+            icon="icons/full/obj16/WikimodelModelFile.gif"
+            extensions="wikimodel"
+            class="wikimodel.presentation.WikimodelEditor"
+            contributorClass="wikimodel.presentation.WikimodelActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
