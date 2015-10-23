@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.eclipse.demo.wikimodel/src" modelPluginID="org.eclipse.demo.wikimodel"
+    modelName="Wikimodel" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>wikimodel.ecore</foreignModel>
+  <genPackages prefix="Wikimodel" disposableProviderFactory="true" ecorePackage="wikimodel.ecore#/">
+    <genClasses ecoreClass="wikimodel.ecore#//Content">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wikimodel.ecore#//Content/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wikimodel.ecore#//Content/publicContent"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference wikimodel.ecore#//Content/historypage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference wikimodel.ecore#//Content/discussionpage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference wikimodel.ecore#//Content/belongsto"/>
+    </genClasses>
+    <genClasses ecoreClass="wikimodel.ecore#//HistoryPage"/>
+    <genClasses ecoreClass="wikimodel.ecore#//User">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wikimodel.ecore#//RegisteredUser/blocked"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wikimodel.ecore#//RegisteredUser/uniqueUserName"/>
+      <genOperations ecoreOperation="wikimodel.ecore#//User/readPage"/>
+    </genClasses>
+    <genClasses ecoreClass="wikimodel.ecore#//EncyclopediaEntry"/>
+    <genClasses ecoreClass="wikimodel.ecore#//Media"/>
+    <genClasses ecoreClass="wikimodel.ecore#//ProjectPage"/>
+    <genClasses ecoreClass="wikimodel.ecore#//SimpleRegisteredUser">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference wikimodel.ecore#//RegisteredUser/userpageprofile"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wikimodel.ecore#//RegisteredUser/uniqueUserName"/>
+    </genClasses>
+    <genClasses ecoreClass="wikimodel.ecore#//UnregisteredUser">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wikimodel.ecore#//UnregisteredUser/ipAddress"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference wikimodel.ecore#//UnregisteredUser/simpleregistereduser"/>
+    </genClasses>
+    <genClasses ecoreClass="wikimodel.ecore#//DiscussionPage"/>
+    <genClasses ecoreClass="wikimodel.ecore#//AutoConfirmedUser">
+      <genOperations ecoreOperation="wikimodel.ecore#//AutoConfirmedUser/movePage"/>
+      <genOperations ecoreOperation="wikimodel.ecore#//AutoConfirmedUser/createPage"/>
+    </genClasses>
+    <genClasses ecoreClass="wikimodel.ecore#//AdminUser"/>
+    <genClasses ecoreClass="wikimodel.ecore#//SysOpUser">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference wikimodel.ecore#//SysOpUser/registereduser"/>
+    </genClasses>
+    <genClasses ecoreClass="wikimodel.ecore#//UserPageProfile"/>
+    <genClasses ecoreClass="wikimodel.ecore#//UserTalkPage"/>
+    <genClasses ecoreClass="wikimodel.ecore#//RegisteredUser">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wikimodel.ecore#//RegisteredUser/uniqueUserName"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference wikimodel.ecore#//RegisteredUser/privilege"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute wikimodel.ecore#//RegisteredUser/blocked"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference wikimodel.ecore#//RegisteredUser/userpageprofile"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference wikimodel.ecore#//RegisteredUser/usertalkpage"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference wikimodel.ecore#//RegisteredUser/memberof"/>
+    </genClasses>
+    <genClasses ecoreClass="wikimodel.ecore#//Privilege"/>
+    <genClasses ecoreClass="wikimodel.ecore#//ProjectGroup"/>
+    <genClasses ecoreClass="wikimodel.ecore#//InterestGroup"/>
+    <genClasses ecoreClass="wikimodel.ecore#//ProjectOrInterestGroup"/>
+  </genPackages>
+</genmodel:GenModel>
